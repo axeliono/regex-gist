@@ -32,9 +32,9 @@ The hex value regular expression checks for the 6 character values that follow a
         *Grouping and Capturing- **()**
         *Bracket Expressions- **`[a-f0-9]`**
 ### Anchors
-By themselves the ^ and $ are used to match with any string that begins with the following character or group and matches with any string that ends with the preceding character respectively. \b
+By themselves the ^ and $ are used to match with any string that begins with the following character or group and matches with any string that ends with the preceding character respectively.
 When a regex begins with ^ and ends with $ then they work to search for an exact match for the string that is between them. 
-`/**^#**?([a-f0-9]{6}|[a-f0-9]{3})**$**/`
+`/**^#**([a-f0-9]{6}|[a-f0-9]{3})**$**/`
 This means that everything the regex is meant to capture everything between the bolded charct
 
 ### Quantifiers
