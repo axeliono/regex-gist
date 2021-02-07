@@ -1,5 +1,4 @@
-# Title (replace with your title)
-
+# Title Understanding a Hex Value Regular Expression
 Introductory paragraph (replace this with your text)
 
 ## Summary
