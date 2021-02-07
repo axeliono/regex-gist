@@ -6,7 +6,7 @@ This gist will contain information and explanations surrounding the regular expr
 
 The hex value regular expression checks for the 6 character values that follow a <#> in a hexadecimal code. An example of a hexadecimal string would be #aa112233. I will be explaining how the different components of the regular expression factor into accurately registering the hex values that are being searched.
 
-/^#?([a-f0-9]{6}|[a-f0-9]{3})$/k
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
 
 ## Table of Contents
 
@@ -23,18 +23,18 @@ The hex value regular expression checks for the 6 character values that follow a
   - [Author](#author)
 
 ## Regex Components
-/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+`/^#?([a-f0-9]{6}|[a-f0-9]{3})$/`
     Breaking the preceding regex down into its basic components we have 
-        *Anchors-  ^ and $
-        *Quantifiers-  ? and {} 
-        *OR operator-  | 
-        *Flags- g(global)
-        *Grouping and Capturing- ()
-        *Bracket Expressions- [a-f0-9]
+        *Anchors-  **^** and **$**
+        *Quantifiers-  **?** and **{}** 
+        *OR operator-  **|**
+        *Flags- **g**(global)
+        *Grouping and Capturing- **()**
+        *Bracket Expressions- **`[a-f0-9]`**
 ### Anchors
 By themselves the ^ and $ are used to match with any string that begins with the following character or group and matches with any string that ends with the preceding character respectively. \b
 When a regex begins with ^ and ends with $ then they work to search for an exact match for the string that is between them. 
-/**^#**?([a-f0-9]{6}|[a-f0-9]{3})**$**/
+`/**^#**?([a-f0-9]{6}|[a-f0-9]{3})**$**/`
 This means that everything the regex is meant to capture everything between the bolded charct
 
 ### Quantifiers
